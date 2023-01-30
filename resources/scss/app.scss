@@ -70,3 +70,30 @@ header {
         }
     }
 }
+
+// REGOLE SEZIONE BLU MERCHANDISE:
+.merchandise {
+    background-color: $primary;
+    height: 125px;
+
+    .container {
+        @include flex ($type: 'both');
+        height: 100%;
+        padding: 10px 40px;
+
+        li {
+            @include flex ($type: 'center');
+            padding-inline: 10px;
+
+            img {
+                height: 50px;
+            }
+
+            a {
+                padding-left: 5px;
+                font-size: $font-medium;
+                color: $text-white;
+            }
+        }
+    }
+}

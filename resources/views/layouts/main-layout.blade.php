@@ -9,5 +9,6 @@
 </head>
 <body>
     @include('components/header')
+    @include('components/bluesection')
 </body>
 </html>
