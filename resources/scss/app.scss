@@ -1,1 +1,72 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+@import 'partials/mixins';
+@import 'partials/variables';
+
+// REGOLE GENERALI
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// LAYOUT
+.container {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+// REGOLE HEADER
+header {
+    height: 95px;
+    line-height: 95px;
+
+    .container {
+        height: 100%;
+        @include flex ($type: 'both');
+
+        .logo {
+            display: flex;
+        }
+
+        .logo img {
+            height: 65px;
+            line-height: 95px;
+        }
+
+        nav ul {
+            display: flex;
+
+            li {
+
+                font-size: $font-medium;
+                padding-inline: 15px;
+
+                &:hover,
+                &.active {
+                    border-bottom: 6px solid $primary;
+                }
+
+                a {
+                    color: $text-nav;
+                }
+            }
+        }
+    }
+}

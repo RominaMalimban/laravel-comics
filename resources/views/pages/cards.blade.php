@@ -1,5 +1,5 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    <h1>COMICS</h1>
+    <h1 class="red">COMICS</h1>
 @endsection
