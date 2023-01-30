@@ -10,5 +10,6 @@
 <body>
     @include('components/header')
     @include('components/bluesection')
+    @include('components/footer')
 </body>
 </html>
