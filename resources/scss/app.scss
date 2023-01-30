@@ -71,6 +71,18 @@ header {
     }
 }
 
+// REGOLE JUMBOTRON:
+.jumbo{
+    height: 400px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: 20% 0;
+    }
+}
+
 // REGOLE SEZIONE BLU MERCHANDISE:
 .merchandise {
     background-color: $primary;
