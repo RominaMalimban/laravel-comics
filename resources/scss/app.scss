@@ -107,6 +107,9 @@ footer {
         background-size: cover;
         color: $text-white;
 
+        ul{
+            padding-left: 0px;
+        }
         .container {
             @include flex ($type: 'both');
             position: relative;
@@ -176,6 +179,53 @@ footer {
                 span {
                     color: $primary;
                 }
+            }
+        }
+    }
+}
+
+// REGOLE HOME:
+main {
+    background-color: #1c1c1c;
+
+    .container {
+        color: $text-white;
+        text-align: center;
+        padding: 30px 0;
+        position: relative;
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            margin-inline: -15px;
+
+            .ms_card {
+                width: calc(100% / 6 - 30px);
+                margin: 20px 15px;
+
+                h4 {
+                    margin-top: 10px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .button {
+            display: inline-block;
+            color: $text-white;
+            background-color: $primary;
+            font-weight: bolder;
+            margin-top: 20px;
+
+            &.current {
+                padding: 10px 20px;
+                position: absolute;
+                left: 0;
+                top: -40px;
+            }
+
+            &.load {
+                padding: 10px 40px;
             }
         }
     }
