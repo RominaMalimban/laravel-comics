@@ -242,3 +242,55 @@ main {
         }
     }
 }
+
+// REGOLE SINGOLA CARD
+.blue-bar{
+    height: 75px;
+    background-color: $primary;
+    position: relative;
+
+    img{
+        position: absolute;
+        left: 230px;
+        top: -230px;
+    }
+}
+
+.single-comic{
+    @include flex ($type: 'both');
+    padding: 50px 0;
+    
+    .sx{
+        width: 70%;
+
+        h1{
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .green-bar{
+            background-color: #55ba59;
+            padding: 20px 30px;
+            @include flex ($type: 'both');
+            margin: 20px 0;
+            font-weight: bold;
+
+            .light-green{
+                color: #9de673;
+            }
+
+            .white{
+                color: $text-white;
+            }
+
+            .availability{
+                padding-left: 30px;
+            }
+        }
+
+        p{
+            color: $text-nav;
+            line-height: 30px;
+        }
+    }
+}

@@ -224,7 +224,6 @@ $cards = [
 @section('content')
     <main>
         <div class="container">
-
             <!-- bottone current -->
             <a href="#" class="button current">CURRENT SERIES</a>
             
@@ -235,9 +234,9 @@ $cards = [
                     foreach ($cards as $card) {  
                 ?>
                 <div class="ms_card">
-                    <div>
+                    <a href="/details">
                         <img src="<?php echo $card["thumb"]?>" alt="">
-                    </div>
+                    </a>
                     <h4><?php echo $card["title"]?></h4>
                 </div>
                 <?php }?>
