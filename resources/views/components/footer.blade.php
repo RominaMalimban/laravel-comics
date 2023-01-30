@@ -127,7 +127,18 @@
                 <span>FOLLOW US</span>
                 <ul>
                     <li >
-                        <img >
+                        <img src="{{Vite::asset('resources/img/footer-facebook.png')}}" >
+                    </li>
+                    <li >
+                        <img src="{{Vite::asset('resources/img/footer-twitter.png')}}" >
+                    </li>
+                    <li >
+                        <img src="{{Vite::asset('resources/img/footer-youtube.png')}}" >
+                    </li>
+                    <li >
+                        <img src="{{Vite::asset('resources/img/footer-pinterest.png')}}" >
+                    </li>à<li >
+                        <img src="{{Vite::asset('resources/img/footer-periscope.png')}}" >
                     </li>
                 </ul>
             </div>
